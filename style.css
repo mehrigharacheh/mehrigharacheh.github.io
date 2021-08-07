@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+ul, body {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 3px solid #333 !important;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+
+}
+.menu a{
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.menu a.selected{
+    border-bottom: 3px solid #333;
+}
+.flex{
+    display: flex;
+}
+h1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 64px; 
+    font-weight: 100;
+ 
+}
+header, footer{
+    height: 60px;
+    padding: 10px 30px;
+    display: grid;
+    align-items: center;
+}
+header li{
+    margin-right: 16px;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 160px);
+}
+.flex-space-beween{
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes slideInUp {
+    from {
+      transform: translate3d(0, 50%, 0);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .mainText {
+    opacity: 1;
+    animation: slideInUp ease-out 0.5s;
+  }
+.mainText p {
+    font-size: 20px;
+}
+  .footerLinks li{
+       margin-right: 16px;
+  }
